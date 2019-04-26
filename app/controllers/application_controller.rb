@@ -1,2 +1,4 @@
-class ApplicationController < ActionController::Base
+class LunchController < ActionController
+    def go
+    end
 end
