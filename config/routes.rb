@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   root'lunch#go'
   post 'eateries/create'
   get '/login', to:'sessions#new'
+  delete '/logout', to:'session#destroy'
   post 'sessions/create'
 end
