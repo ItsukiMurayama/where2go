@@ -1,4 +1,8 @@
 <h1><%=@recommend.name%>にでも行きますかい？</h1>
-<h3>郵便番号:<%=@recommend.zip%></h3>
-<h3>住所:<%=@recommend.address%></h3>
-<h3>TEL:<%=@recommend.tel%></h3>
+<ul>
+    <li>住所:<%=@recommend.address%></li>
+    <li>電話番号:<%=@recommend.tel%></li>
+    <li>定休日:<%=@recommend.regular_holiday%></li>
+    <li>開店時間:<%=@recommend.open%> - <%= @recommend.close %></li>
+</ul>
+
