@@ -1,7 +1,7 @@
 <h1>Eateries#new</h1>
 <p>Find me in app/views/eateries/new.html.erb</p>
 
-<%= form_with mpdel: Eatery.new, url: {action: :create},
+<%= form_with model: Eatery.new, url: {action: :create},
 local: true do |f| %>
 <div>
 <%= f.label :name %>
