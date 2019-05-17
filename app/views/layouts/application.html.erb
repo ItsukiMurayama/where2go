@@ -10,6 +10,12 @@
   </head>
 
   <body>
+  <% if logged_in? %>
+  <%= like_to "Log out", logout_path, method: :delete %>
+  <% else %>
+  <%= link_to "Log in", login_path %>
+  <% end %>
+  
   <% flash.each do |message_type, message| %>
     <div class="alert alert-<%= message_type %>"><%= message %></div>
     <% end %>
