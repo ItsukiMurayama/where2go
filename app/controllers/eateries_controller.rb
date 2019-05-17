@@ -12,7 +12,7 @@ class EateriesController < ApplicationController
   private
 
   def eatery_params
-    params.require(:eatery).peremit(:name)
+    params.require(:eatery).permit(:name)
   end
 
 end
